@@ -1,0 +1,120 @@
+/* Main */
+body {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; background-size: cover;
+}
+ 
+.main-box {
+    padding-top:50px;
+    padding-bottom: 70px;
+}
+
+.card {
+    opacity: .7;
+}
+
+img {
+    display: block;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav  li a:hover {
+    color: #0d6efd !important;
+}
+
+.navbar-brand {
+    margin-bottom: 0;
+}
+
+/* Compose Form */
+.compose-box {
+    width: 100%;
+    max-width: 34.375rem;
+    padding: 0.9375rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.compose-h1 {  
+    color: whitesmoke;
+    text-align: center;
+}
+
+.form-label {
+    color: #0d6efd;
+}
+
+.form-control {
+    opacity: .7;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+}
+
+.button-box {
+    text-align: center;
+}
+
+/* Footer */
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+    color: white;
+	background-color: #212529;
+    opacity: .7;
+}
+
+.footer a, .footer i {
+	margin-top: 25px;
+}
+
+.footer-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #0d6efd;
+}
+
+.footer-icon:hover {
+    color: #5a98f7;
+}
+
+/* BG Image for Phones */
+@media (max-width: 480px) {
+    body {
+        background-image: url("../img/phone.jpg");
+    }
+}
+
+/* BG Image for Tablets */
+@media (min-width: 480px) and (max-width: 1025px) {
+    body {
+        background-image: url("../img/tablet.jpg");
+    }
+}
+
+/* BG Image for Desktop */
+@media (min-width: 1025px) {
+    body {
+	    background-image: url("../img/desktop.jpg");
+   }
+}

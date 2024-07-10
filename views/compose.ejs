@@ -1,0 +1,52 @@
+<%- include("partials/header") -%>
+
+    <div class="compose-box container-sm">
+
+        <h1 
+            class="mb-3 fw-normal compose-h1">
+                Compose
+        </h1>
+
+        <form action="/compose" method="post">
+            <div class="form-floating mb-3">               
+                <input 
+                    type="text" 
+                    class="form-control bg-dark text-light" name="postTitle" 
+                    placeholder="Title"
+                    autocomplete="off"
+                >
+                <label 
+                    for="titleLabel" 
+                    class="form-label">
+                        Title
+                </label>
+            </div>
+            <div class="form-floating mb-3">              
+                <textarea 
+                    class="form-control bg-dark text-light" name="postContent" 
+                    style="height: 12.5rem" 
+                    placeholder="Post" 
+                    aria-label="With textarea"
+                    ></textarea>
+                <label 
+                    for="titleLabel" 
+                    class="form-label">
+                        Start typing your next masterpiece...
+                </label>
+            </div>
+
+            <div class="button-box">
+                <button 
+                    class="btn btn-primary btn-lg compose-btn" type="submit" 
+                    name="submit">
+                        Publish
+                </button>
+            </div>
+              
+        </form>
+    </div>
+
+
+
+
+    <%- include("partials/footer") -%>
